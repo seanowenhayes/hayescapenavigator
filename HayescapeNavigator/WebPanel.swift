@@ -7,11 +7,11 @@ struct WebPanel: View {
 
     
         var body: some View {
-            VStack {
-                if showTabSelection {
-                    Text(page.title)
-                }
+            ZStack {
                 WebView(page)
+                if showTabSelection {
+                    ControlPanel(page: page, isVisible: $showTabSelection)
+                }
             }
             .onAppear {
                 page.load(URLRequest(url: URL(string: "https://www.swift.org")!))
