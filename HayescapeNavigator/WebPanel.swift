@@ -15,6 +15,7 @@ struct WebPanel: View {
             }
             .onAppear {
                 page.load(URLRequest(url: URL(string: "https://www.swift.org")!))
+                
             }.onKeyPress { event in
                 if event.modifiers.contains(.command) {
                   if event.characters.contains("t") {
