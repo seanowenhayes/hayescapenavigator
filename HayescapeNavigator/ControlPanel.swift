@@ -1,10 +1,3 @@
-//
-//  ControlPanel.swift
-//  HayescapeNavigator
-//
-//  Created by sean on 15/11/25.
-//
-
 import SwiftUI
 import WebKit
 
